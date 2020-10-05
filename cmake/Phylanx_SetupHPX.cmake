@@ -3,10 +3,11 @@
 # Distributed under the Boost Software License, Version 1.0. (See accompanying
 # file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 
+set(HPX_DIR /usr/include/lib/cmake/HPX)
 # setup HPX as a dependency
 macro(phylanx_setup_hpx)
   if(NOT HPX_DIR AND HPX_ROOT)
-    set(HPX_DIR ${HPX_ROOT}/lib/cmake/HPX)
+    set(HPX_DIR /usr/include/lib/cmake/HPX)
   endif()
 
   if(NOT HPX_DIR AND EXISTS "$ENV{HPX_DIR}")

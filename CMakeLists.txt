@@ -5,6 +5,7 @@
 # file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 
 cmake_minimum_required(VERSION 3.11.0)
+set(CMAKE_BUILD_TYPE Release)
 
 # explicitly set certain policies
 cmake_policy(VERSION 3.11.0)
